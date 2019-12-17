@@ -1,0 +1,16 @@
+.menu {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__item {
+    margin-left: 35px;
+    font-size: calc-rem(14px);
+  }
+
+  &__url {
+    font-size: contain;
+  }
+}

@@ -1,0 +1,8 @@
+.section {
+  position: relative;
+
+  &--gradient-bg {
+    background: linear-gradient(0deg, $secondColor 50%, $thirdColor 50%);
+    overflow: hidden;
+  }
+}

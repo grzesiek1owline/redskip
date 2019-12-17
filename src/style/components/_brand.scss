@@ -1,0 +1,11 @@
+.brand {
+  font-size: calc-rem(24px);
+
+  &--color {
+    color: $secondColor;
+  }
+
+  &--bold {
+    font-weight: 900;
+  }
+}

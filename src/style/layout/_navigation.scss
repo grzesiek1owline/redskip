@@ -1,0 +1,19 @@
+// Navigation
+.nav {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: center;
+  padding-top: 45px;
+  padding-bottom: 20px;
+
+  &__menu-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__menu-list {
+    margin-right: 95px;
+  }
+}

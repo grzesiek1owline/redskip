@@ -1,0 +1,23 @@
+// GRID
+.container {
+  width: calc(100vw - 440px);
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @include rwd(1600px) {
+    width: calc(100vw - 340px);
+  }
+
+  @include rwd(1200px) {
+    width: calc(100vw - 240px);
+  }
+
+  @include rwd(1024px) {
+    width: calc(100vw - 140px);
+  }
+
+  @include rwd(992px) {
+    width: 100%;
+  }
+}
