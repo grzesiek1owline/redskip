@@ -32,15 +32,30 @@ h6 {
   font-size: calc-rem(48px);
 }
 
+.h3 {
+  font-size: calc-rem(48px);
+}
+
 p {
   margin-bottom: calc-rem(16px);
 }
 
 // Text Styles
-.cs { color: $secondColor;}
-em { font-style: italic; }
-strong { font-weight: bold; }
-.uppercase { text-transform: uppercase; }
+.cs {
+  color: $secondColor;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
 
 a {
   color: inherit;
@@ -101,32 +116,35 @@ a {
   }
 
   &__f-size {
-      &-l {
-          font-size: calc-rem(18px);
-      }
+    &-l {
+      font-size: calc-rem(18px);
+    }
 
-      &-s {
-          font-size: calc-rem(14px);
-      }
+    &-s {
+      font-size: calc-rem(14px);
+    }
 
-      &-xl {
-          font-size: calc-rem(21px);
-          font-weight: 700;
-      }
+    &-xl {
+      font-size: calc-rem(21px);
+      font-weight: 700;
+    }
   }
 
   &__l-height {
-      &-xl {
-          line-height: 48px;
-      }
-      &-l {
-          line-height: 27px;
-      }
-      &-xxl {
-          line-height: 36px;
-      }
+    &-xl {
+      line-height: 48px;
+    }
+
+    &-l {
+      line-height: 27px;
+    }
+
+    &-xxl {
+      line-height: 36px;
+    }
   }
+
   &__title {
-      font-weight: 700;
+    font-weight: 700;
   }
 }
