@@ -68,6 +68,17 @@ a {
   }
 }
 
+.section-title-xl {
+  font-size: calc-rem(72px);
+  font-weight: 700;
+  line-height: calc-rem(78px);
+  margin-bottom: 55px;
+}
+
+b {
+  font-weight: 700;
+}
+
 .paragraph {
   color: inherit;
 
@@ -79,6 +90,11 @@ a {
 
     &-m {
       font-size: calc-rem(16px);
+      line-height: calc-rem(24px);
+    }
+
+    &-xl {
+      font-size: calc-rem(24px);
       line-height: calc-rem(24px);
     }
 
@@ -115,36 +131,8 @@ a {
     font-weight: 700;
   }
 
-  &__f-size {
-    &-l {
-      font-size: calc-rem(18px);
-    }
-
-    &-s {
-      font-size: calc-rem(14px);
-    }
-
-    &-xl {
-      font-size: calc-rem(21px);
-      font-weight: 700;
-    }
+  &--title {
+    margin-bottom: 30px;
   }
 
-  &__l-height {
-    &-xl {
-      line-height: 48px;
-    }
-
-    &-l {
-      line-height: 27px;
-    }
-
-    &-xxl {
-      line-height: 36px;
-    }
-  }
-
-  &__title {
-    font-weight: 700;
-  }
 }

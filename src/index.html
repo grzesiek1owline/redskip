@@ -99,6 +99,83 @@
   </div>
 </section>
 
+<section class="section-advantage">
+  <div class="container">
+    <div class="row">
+      <div class="column">
+
+        <div class="advantage">
+          <img src="" alt="" class="advantage__ico">
+          <p class="advantage__title"></p>
+          <p class="advantage__desc"></p>
+        </div>
+
+      </div>
+      <div class="column">
+
+        <div class="advantage">
+          <img src="" alt="" class="advantage__ico">
+          <p class="advantage__title"></p>
+          <p class="advantage__desc"></p>
+        </div>
+
+      </div>
+      <div class="column">
+
+        <div class="advantage">
+          <img src="" alt="" class="advantage__ico">
+          <p class="advantage__title"></p>
+          <p class="advantage__desc"></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-offert">
+  <img class="half-bg-40 half-bg--right" src="" alt="">
+  <!-- pozycjonowanie absolutne, 40% szerokośc, wyrównane w pionie z contentem, modyfikator określa stronę -->
+  <div class="container">
+    <div class="half-content-60 half-content--left">
+      <h2 class="section-title-xl">Nasza oferta to nie tylko wywóz gruzu.</h2>
+      <p class="paragraph paragraph--bold paragraph--size-xl paragraph--title">Oferujemy</p>
+      <div class="row row--offert">
+         <!--dodałem modyfikator offert, bo nim wysterujemy marginesy po prostu, tu chyba będzie dobry grid i odstęp poprzez gap  -->
+        <div class="column">
+          <ul class="check-list">
+            <li class="check-list__item">wywóz gruzu</li>
+            <li class="check-list__item">wywóz śmieci po remoncie</li>
+            <li class="check-list__item">wywóz odpadów budowlanych</li>
+            <li class="check-list__item">wywóz mebli i gabarytów</li>
+            <li class="check-list__item">wywóz odpadów zielonych</li>
+          </ul>
+        </div>
+        <div class="column">
+          <ul class="check-list">
+            <li class="check-list__item">wywóz ziemi</li>
+            <li class="check-list__item">wywóz materiałów izolacyjnych</li>
+            <li class="check-list__item">wywóz papy</li>
+            <li class="check-list__item">oraz wywóz innych śmieci,</li>
+            <li class="check-list__item">odpadów i nieczystości w kontenerach</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="paragraph paragraph--bold paragraph--size-xl paragraph--title">Dodatkowe usługi, które możemy zaoferować</p>
+      <p class="paragraph paragraph--size-m">
+        Standardowo podstawiamy kontener na okres 5-7 dni roboczych. Oprócz tego oferujemy
+        również: załadunek na poczekaniu (masz 30 minut na załadowanie kontenera), ekspres
+        (podstawienie tego samego dnia – tylko telefonicznie), wynajem długoterminowy
+        oraz podstawienie kontenera rano i odbiór tego samego dnia po południu.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- column,row,section-xxx, half-content i half-bg wrzućmy do pliku grid.scss , bo to w sumie elementy pozycjonujące są -->
+<!-- dla checlist i advantage utwórz nowe scss-y -->
+
 
 <section class="towns">
   <div class="container">
@@ -141,7 +218,7 @@
           <li class="menu__item menu__item--footer"><a href="" class="menu__url">tekst-3</a></li>
         </ul>
 
-        <ul class="menu menu--column footer__menu">
+        <ul class="menu menu--column footer__menu footer__menu--second-column">
           <li class="menu__item menu__item--footer"><p class="menu__head">tekst-1</p></li>
           <li class="menu__item menu__item--footer"><a href="" class="menu__url">tekst-2</a></li>
           <li class="menu__item menu__item--footer"><a href="" class="menu__url">tekst-3</a></li>

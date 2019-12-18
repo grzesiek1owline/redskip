@@ -6,23 +6,20 @@
 
     &__wrapper {
         display: grid;
-        grid-template-columns: 30% 1fr 218px;
+        grid-template-columns: 150px 1fr 160px 218px;
         grid-template-rows: auto;
-        grid-template-areas: "brand nav payments";
+        grid-template-areas: "brand nav . payments";
 
-        @include rwd(1200px) {
-            grid-template-columns: 240px 1fr 218px;
-        }
+        // @include rwd(1200px) {
+        //     grid-template-columns: 240px 1fr 218px;
+        // }
 
-        @include rwd(1024px) {
-            grid-template-columns: 180px 1fr 218px;
-        }
+        // @include rwd(1024px) {
+        //     grid-template-columns: 180px 1fr 218px;
+        // }
 
         @include rwd(992px) {
-            grid-template-areas:
-            "brand nav"
-            "payments payments";
-            grid-template-columns: 60% 1fr;
+            grid-template-columns: 150px 1fr 100px 218px;
         }
 
         @include rwd(768px) {
@@ -31,6 +28,8 @@
             "nav"
             "payments";
             grid-template-columns: 1fr;
+            justify-item: center;
+            align-items: center;
         }
     }
 
@@ -47,17 +46,8 @@
         grid-area: nav;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: stretch;
-        padding-right: 164px;
-
-        @include rwd(1366px) {
-            padding-right: 120px;
-        }
-
-        @include rwd(992px) {
-            padding:0;
-        }
 
         @include rwd(768px) {
             flex-flow: column;
@@ -68,13 +58,27 @@
 
     &__menu {
         padding: 0;
+
+        &--second-column {
+            padding-left: 160px;
+
+            @include rwd(992px) {
+                padding-left: 60px;
+            }
+
+            @include rwd(768px) {
+                padding: 30px 0;
+            }
+        }
     }
 
     &__payments {
         grid-area: payments;
+        width: 100%;
+        max-width: 100%;
 
-        @include rwd(992px) {
-            margin: 45px auto 0;
+        @include rwd(768px) {
+            justify-self: center;
             text-align: center;
         }
     }
