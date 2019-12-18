@@ -6,16 +6,14 @@
   margin: 0 auto;
 
   @include rwd(1600px) {
-    width: calc(100vw - 340px);
+    width: calc(100vw - 280px);
   }
 
   @include rwd(1200px) {
-    width: calc(100vw - 240px);
+    width: 100vw;
+    max-width: 100%;
   }
 
-  @include rwd(1024px) {
-    width: calc(100vw - 140px);
-  }
 
   @include rwd(992px) {
     width: 100%;
