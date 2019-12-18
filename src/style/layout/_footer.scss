@@ -15,7 +15,63 @@
 
     &__title {
         text-align: center;
-        margin-top: 104px;
+        margin: 104px 0 48px 0;
     }
 
+    &__info {
+        font-size: calc-rem(14px);
+        line-height: calc-rem(28px);
+    }
+
+    &--color {
+        color: $secondColor;
+    }
+
+    &__payment {
+
+        width: 216px;
+        height: 87px;
+        background-image: url(/src/static/payment.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__row {
+        margin-top: 100px;
+    }
+
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    align-items: flex-start;
+
+    // &__item {
+    //     // display: flex;
+    //     // flex-flow: row nowrap;
+    //     // justify-content: flex-start;
+    //     // align-items: flex-start;
+    //     //   color: #262626;
+    // }
+
+
+    // &__wrap {
+    //   margin-left: 45px;
+    // }
+
+    // &__title {
+    //   color: inherit;
+    //   font-size: 21px;
+    //   font-weight: 700;
+    //   margin-bottom: 5px;
+    // }
+
+    // &__info {
+    //   opacity: 0.7;
+    //   color: inherit;
+    //   font-size: calc-rem(14px);
+    //   line-height: calc-rem(18px);
+    //   margin: 0;
+    // }
 }
