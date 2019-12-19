@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel=“stylesheet” type=“text/css” href=“../dist/style.css” />
+  <link rel=“stylesheet” type=“text/css” href=“../dist/style.css” />
+  <script src="/js/faq.js"></script>
+  <title>Static HTML Site Boilerplate</title>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="brand nav__brand">red<span class="brand--color brand--bold">skip</span>.pl</a>
+
+                <button class="hamburger nav__hamburger js-toggle-menu">
+                    <span class=""></span>
+                    <span class=""></span>
+                    <span class=""></span>
+                    <span class=""></span>
+                </button>
+
+                <div class="nav__menu-wrap">
+                    <ul class="menu nav__menu-list">
+                        <li class="menu__item"><a href="" class="menu__url">tekst-1</a></li>
+                        <li class="menu__item"><a href="" class="menu__url">tekst-2</a></li>
+                        <li class="menu__item"><a href="" class="menu__url">tekst-3</a></li>
+                    </ul>
+                    <form class="form header__form">
+                        <div class="form__row">
+                          <img src="/static/location.svg" alt="location icon" class="form__input-ico">
+                          <input type="text" class="form__input" placeholder="Wpisz kod pocztowy">
+                        </div>
+                        <input type="submit" class="btn" value="Wyceń usługę">
+                      </form>
+                </div>
+            </nav>
+    </div>
+</header>
+
+<section class="hero hero--page" style="background-image: url('/static/faq.png')">
+  <div class="container hero__container">
+    <h1 class="h1">Porady i Informacje</h1>
+  </div>
+</section>
+
+<section class="section section--faq">
+  <div class="container">
+
+    <div class="dropdown">
+      <div class="dropdown__top">
+        <p class="paragraph paragraph--bold paragraph--size-xl paragraph--title">Dodatkowe informacje</p>
+      </div>
+      <div class="dropdown__btm">
+        <p class="paragraph paragraph--size-m">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur facilisis vulputate nunc. Morbi in scelerisque quam.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
