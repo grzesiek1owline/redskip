@@ -5,4 +5,8 @@
     background: linear-gradient(0deg, $secondColor 50%, $thirdColor 50%);
     overflow: hidden;
   }
+
+  &--dark-bg {
+    background-color: $secondColor;
+  }
 }
