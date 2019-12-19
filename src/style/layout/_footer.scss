@@ -1,1 +1,234 @@
-// Footer Styles
+// // Footer Styles
+
+.footer {
+    border-top: 1px solid #eaebf3;
+    padding: 100px 0 100px;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 150px 1fr 160px 218px;
+        grid-template-rows: auto;
+        grid-template-areas: "brand nav . payments";
+
+        // @include rwd(1200px) {
+        //     grid-template-columns: 240px 1fr 218px;
+        // }
+
+        // @include rwd(1024px) {
+        //     grid-template-columns: 180px 1fr 218px;
+        // }
+
+        @include rwd(992px) {
+            grid-template-columns: 150px 1fr 100px 218px;
+        }
+
+        @include rwd(768px) {
+            grid-template-areas:
+            "brand"
+            "nav"
+            "payments";
+            grid-template-columns: 1fr;
+            justify-item: center;
+            align-items: center;
+        }
+    }
+
+    &__brand {
+        grid-area: brand;
+
+        @include rwd(768px) {
+            justify-self: center;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__nav {
+        grid-area: nav;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: stretch;
+
+        @include rwd(768px) {
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__menu {
+        padding: 0;
+
+        &--second-column {
+            padding-left: 160px;
+
+            @include rwd(992px) {
+                padding-left: 60px;
+            }
+
+            @include rwd(768px) {
+                padding: 30px 0;
+            }
+        }
+    }
+
+    &__payments {
+        grid-area: payments;
+        width: 100%;
+        max-width: 100%;
+
+        @include rwd(768px) {
+            justify-self: center;
+            text-align: center;
+        }
+    }
+
+}
+
+.payments {
+    width: 100%;
+    max-width: 300px;
+
+    &__img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+.towns {
+    padding: 110px 0 95px;
+    text-align: center;
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-rows: auto;
+        gap: 30px;
+        align-items: stretch;
+        margin-top: 50px;
+
+        @include rwd(1200px) {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
+        @include rwd(992px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include rwd(768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__column {
+        text-align: left;
+
+        @include rwd(992px) {
+            text-align: center;
+        }
+    }
+
+    &__url {
+        display: block;
+        color: $secondColor;
+        font-size: calc-rem(14px);
+        line-height: calc-rem(28px);
+        transition: opacity 200ms ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+}
+
+// .footer {
+//     &__cities {
+//         min-height: 345px;
+//     }
+
+//     &__links {
+//         min-height: 570px;
+//     }
+
+//     &--bordered {
+//         border-top: 1px solid #eaebf3;
+//     }
+
+//     &__title {
+//         text-align: center;
+//         margin: 104px 0 48px 0;
+//     }
+
+//     &__info {
+//         font-size: calc-rem(14px);
+//         line-height: calc-rem(28px);
+//         margin-bottom: 0;
+//     }
+
+//     &--color {
+//         color: $secondColor;
+//     }
+
+//     &__payment {
+
+//         width: 216px;
+//         height: 87px;
+//         background-image: url(/static/payment.jpg);
+//         background-repeat: no-repeat;
+//     }
+
+//     &__row {
+//         margin-top: 100px;
+//     }
+
+// }
+
+// .row {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+//     grid-auto-rows: auto;
+//     grid-gap: 10px;
+// }
+
+
+// .row-footer {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+//     grid-auto-rows: 30px;
+//     grid-gap: 10px;
+//     align-items: flex-start;
+
+// }
+
+// // @media (max-width: 780px) {
+// //     .row-footer {
+// //         grid-auto-rows: auto;
+// //     }
+// // }
+
+// @media (max-width: 580px) {
+//     .row-footer {
+//         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+//         &__item {
+
+//             &--first {
+//                 order: 0;
+//             }
+
+//             &--second {
+//                 order: 0;
+//             }
+
+//             &--third {
+//                 order: 0;
+//             }
+
+//             &--fourth {
+//                 align-self: flex-end;
+//                 order: 5;
+//             }
+//         }
+//     }
+// }

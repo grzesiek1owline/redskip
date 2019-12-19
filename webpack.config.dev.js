@@ -8,7 +8,7 @@ module.exports = merge(common, {
     contentBase: 'src',
     watchContentBase: true,
     hot: true,
-    open: true,
+    open: 'Google Chrome',
     port: process.env.PORT || 9000,
     host: process.env.HOST || 'localhost',
   },

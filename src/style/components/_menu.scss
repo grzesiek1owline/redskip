@@ -5,12 +5,32 @@
   align-items: center;
   justify-content: flex-end;
 
+  &--column {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
   &__item {
     margin-left: 35px;
     font-size: calc-rem(14px);
+
+    &--footer {
+      margin-bottom: 15px;
+
+      @include rwd(768px) {
+        margin-left: 0;
+      }
+    }
   }
 
   &__url {
     font-size: contain;
+  }
+
+  &__head {
+    font-size: contain;
+    font-weight: 700;
+    margin-bottom: 0;
   }
 }
