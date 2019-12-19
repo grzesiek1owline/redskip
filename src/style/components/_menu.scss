@@ -13,10 +13,11 @@
 
   &__item {
     margin-left: 35px;
-    margin-bottom: 15px;
     font-size: calc-rem(14px);
 
     &--footer {
+      margin-bottom: 15px;
+
       @include rwd(768px) {
         margin-left: 0;
       }
