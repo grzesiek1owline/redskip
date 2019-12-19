@@ -24,41 +24,46 @@
 .half-bg {
   &-40 {
     display: block;
-    left: 60%;
-    margin-top: 305px;
+    top: 50%;
+    transform: translateY(-50%);
     height: auto;
     position: absolute;
     width: 40%;
 
     @include rwd(1200px) {
-      left: 50%;
-      width: 45%;
+      right: 0;
+      width: 40%;
     }
 
     @include rwd(990px) {
       position: static;
-      margin: 0 auto;
+      top: 0;
+      transform: unset;
+      width: 80%;
+      margin: 40px auto 0;
     }
+  }
+
+  &--right {
+    left: unset;
+    right: 0;
   }
 }
 
 .half-content {
   &-60 {
-    position: absolute;
-    width: 48%;
-    max-width: 800px;
+    width: 60%;
 
     @include rwd(990px) {
       position: static;
       margin: 0 auto;
-      width: 80%;
+      width: 100%;
     }
   }
 }
 
 .section {
   &-title-xl {
-    margin-top: 139px;
     margin-bottom: 61px;
 
     &--small-mb {
