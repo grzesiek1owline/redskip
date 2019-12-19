@@ -68,4 +68,17 @@
     background-size: 21px auto;
     margin: 0 auto;
   }
+
+  &__info {
+    width: 55%;
+    margin-top: 80px;
+
+    @include rwd (992px) {
+      width: 70%;
+    }
+
+    @include rwd (768px) {
+      width: 100%;
+    }
+  }
 }
