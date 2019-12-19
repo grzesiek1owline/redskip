@@ -1,0 +1,17 @@
+.check-list__item {
+    line-height: 36px;
+    position: relative;
+    padding-left: 30px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 8px;
+        height: 8px;
+        border: 2px solid blue;
+        border-radius: 100%;
+    }
+}
