@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel=“stylesheet” type=“text/css” href=“../dist/style.css” />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <title>Static HTML Site Boilerplate</title>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav nav--page">
+          <a href="index.html" class="brand nav__brand"
+            >red<span class="brand--color brand--bold">skip</span>.pl</a
+          >
+
+          <button class="hamburger nav__hamburger js-toggle-menu">
+            <span class=""></span>
+            <span class=""></span>
+            <span class=""></span>
+            <span class=""></span>
+          </button>
+
+          <div class="nav__menu-wrap">
+            <ul class="menu nav__menu-list">
+              <li class="menu__item">
+                <a href="" class="menu__url">tekst-1</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__url">tekst-2</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__url">tekst-3</a>
+              </li>
+            </ul>
+            <form class="form site-header__form">
+              <div class="form__row form__row--header">
+                <img
+                  src="/static/location.svg"
+                  alt="location icon"
+                  class="form__input-ico"
+                />
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Wpisz kod pocztowy"
+                />
+              </div>
+              <input type="submit" class="btn" value="Wyceń usługę" />
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section
+      class="hero hero--page"
+      style="background-image: url('/static/faq.png')"
+    >
+      <div class="container hero__container">
+        <h1 class="h1">Cennik</h1>
+      </div>
+    </section>
+
+    <section class="section section--prices">
+      <div class="container">
+        <div class="prices">
+          <!-- ROW NAMES -->
+          <div class="prices__column prices__column--titles">
+            <ul class="prices__list prices__list--row-title">
+              <li class="prices__list-element">
+                <p class="paragraph paragraph--size-m paragraph--bold">
+                  Rozmiar kontenera
+                </p>
+              </li>
+              <li class="prices__list-element">
+                <p class="paragraph paragraph--size-m paragraph--bold">
+                  Cena*
+                </p>
+              </li>
+              <li class="prices__list-element">
+                <p class="paragraph paragraph--size-m paragraph--bold">
+                  Podstawienie
+                </p>
+              </li>
+              <li class="prices__list-element">
+                <p class="paragraph paragraph--size-m paragraph--bold">
+                  Wynajem (do 4 lub 7dni**)
+                </p>
+              </li>
+              <li class="prices__list-element">
+                <p class="paragraph paragraph--size-m paragraph--bold">
+                  Odbiór
+                </p>
+              </li>
+              <li class="prices__list-element">
+                <p class="paragraph paragraph--size-m paragraph--bold">
+                  Utylizacja
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- CONTAINERS -->
+          <div class="prices__column">
+            <img src="/static/kont5.png" alt="" class="prices__img" />
+            <ul class="prices__list">
+              <li class="prices__list-element" data-name="Rozmiar kontenera">
+                <p class="paragraph paragraph--size-m paragraph--bold">
+                  2 - 3 m3
+                </p>
+              </li>
+              <li class="prices__list-element" data-name="Cena">
+                <p class="paragraph paragraph--size-m paragraph--bold">
+                  od 350 zł
+                </p>
+              </li>
+              <li class="prices__list-element" data-name="Podstawienie">
+                <span class="prices__check"></span>
+              </li>
+              <li class="prices__list-element" data-name="Wynajem (do 4 lub 7dni**)">
+                <span class="prices__check"></span>
+              </li>
+              <li class="prices__list-element" data-name="Odbiór">
+                <span class="prices__check"></span>
+              </li>
+              <li class="prices__list-element" data-name="Utylizacja">
+                <span class="prices__check"></span>
+              </li>
+            </ul>
+          </div>
+          <div class="prices__column">
+            <img src="/static/kont5.png" alt="" class="prices__img" />
+            <ul class="prices__list">
+              <li class="prices__list-element" data-name="Rozmiar kontenera">
+                <p class="paragraph paragraph--size-m paragraph--bold">
+                  2 - 3 m3
+                </p>
+              </li>
+              <li class="prices__list-element" data-name="Cena">
+                <p class="paragraph paragraph--size-m paragraph--bold">
+                  od 350 zł
+                </p>
+              </li>
+              <li class="prices__list-element" data-name="Podstawienie">
+                <span class="prices__check"></span>
+              </li>
+              <li class="prices__list-element" data-name="Wynajem (do 4 lub 7dni**)">
+                <span class="prices__check"></span>
+              </li>
+              <li class="prices__list-element" data-name="Odbiór">
+                <span class="prices__check"></span>
+              </li>
+              <li class="prices__list-element" data-name="Utylizacja">
+                <span class="prices__check"></span>
+              </li>
+            </ul>
+          </div>
+          <div class="prices__column">
+            <img src="/static/kont5.png" alt="" class="prices__img" />
+            <ul class="prices__list">
+              <li class="prices__list-element" data-name="Rozmiar kontenera">
+                <p class="paragraph paragraph--size-m paragraph--bold">
+                  2 - 3 m3
+                </p>
+              </li>
+              <li class="prices__list-element" data-name="Cena">
+                <p class="paragraph paragraph--size-m paragraph--bold">
+                  od 350 zł
+                </p>
+              </li>
+              <li class="prices__list-element" data-name="Podstawienie">
+                <span class="prices__check"></span>
+              </li>
+              <li class="prices__list-element" data-name="Wynajem (do 4 lub 7dni**)">
+                <span class="prices__check"></span>
+              </li>
+              <li class="prices__list-element" data-name="Odbiór">
+                <span class="prices__check"></span>
+              </li>
+              <li class="prices__list-element" data-name="Utylizacja">
+                <span class="prices__check"></span>
+              </li>
+            </ul>
+          </div>
+          <div class="prices__column">
+            <img src="/static/kont5.png" alt="" class="prices__img" />
+            <ul class="prices__list">
+              <li class="prices__list-element" data-name="Rozmiar kontenera">
+                <p class="paragraph paragraph--size-m paragraph--bold">
+                  2 - 3 m3
+                </p>
+              </li>
+              <li class="prices__list-element" data-name="Cena">
+                <p class="paragraph paragraph--size-m paragraph--bold">
+                  od 350 zł
+                </p>
+              </li>
+              <li class="prices__list-element" data-name="Podstawienie">
+                <span class="prices__check"></span>
+              </li>
+              <li class="prices__list-element" data-name="Wynajem (do 4 lub 7dni**)">
+                <span class="prices__check"></span>
+              </li>
+              <li class="prices__list-element" data-name="Odbiór">
+                <span class="prices__check"></span>
+              </li>
+              <li class="prices__list-element" data-name="Utylizacja">
+                <span class="prices__check"></span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
