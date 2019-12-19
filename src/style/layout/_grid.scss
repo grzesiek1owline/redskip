@@ -27,7 +27,21 @@
   align-items: stretch;
   flex-flow: row nowrap;
 
+  &--align-center {
+    align-items: center;
+  }
+
   &--advantage {
     padding: 130px 0;
+
+    @include rwd(992px) {
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
+}
+
+.column {
+  width: 50%;
 }

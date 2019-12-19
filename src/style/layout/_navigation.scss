@@ -15,5 +15,9 @@
 
   &__menu-list {
     margin-right: 95px;
+
+    @include rwd(992px) {
+      margin-right: 45px;
+    }
   }
 }

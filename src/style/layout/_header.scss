@@ -1,1 +1,16 @@
 // Header Styles
+.header {
+  padding: 0;
+
+  &__form {
+    width: 540px;
+
+    @include rwd(1366px) {
+      width: 440px;
+    }
+
+    @include rwd(992px) {
+      width: 340px;
+    }
+  }
+}
