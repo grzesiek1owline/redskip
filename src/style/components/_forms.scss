@@ -16,6 +16,10 @@
       background-color: $firstBgColor;
       overflow: hidden;
       margin-right: 12px;
+
+      &--header {
+        border: none;
+      }
   }
 
   &__input {

@@ -1,6 +1,10 @@
 .hero {
   padding: 87px 0 104px;
 
+  &--home {
+    padding: 200px 0 104px;
+  }
+
   &__container {
     text-align: center;
     width: 1000px;

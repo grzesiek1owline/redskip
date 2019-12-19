@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel=“stylesheet” type=“text/css” href=“../dist/style.css” />
-  <link rel=“stylesheet” type=“text/css” href=“../dist/style.css” />
-  <script src="/js/faq.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
   <title>Static HTML Site Boilerplate</title>
 </head>
 
@@ -15,7 +17,7 @@
 
   <header class="site-header">
     <div class="container">
-            <nav class="nav">
+            <nav class="nav nav--page">
                 <a href="index.html" class="brand nav__brand">red<span class="brand--color brand--bold">skip</span>.pl</a>
 
                 <button class="hamburger nav__hamburger js-toggle-menu">
@@ -31,8 +33,8 @@
                         <li class="menu__item"><a href="" class="menu__url">tekst-2</a></li>
                         <li class="menu__item"><a href="" class="menu__url">tekst-3</a></li>
                     </ul>
-                    <form class="form header__form">
-                        <div class="form__row">
+                    <form class="form site-header__form">
+                        <div class="form__row form__row--header">
                           <img src="/static/location.svg" alt="location icon" class="form__input-ico">
                           <input type="text" class="form__input" placeholder="Wpisz kod pocztowy">
                         </div>
@@ -55,6 +57,43 @@
     <div class="dropdown">
       <div class="dropdown__top">
         <p class="paragraph paragraph--bold paragraph--size-xl paragraph--title">Dodatkowe informacje</p>
+        <button class="btn btn--arrow js-open-faq"><i class="arrow down"></i></button>
+      </div>
+      <div class="dropdown__btm">
+        <p class="paragraph paragraph--size-m">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur facilisis vulputate nunc. Morbi in scelerisque quam.
+        </p>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <div class="dropdown__top dropdown__top--add">
+        <p class="paragraph paragraph--bold paragraph--size-xl paragraph--title">Dodatkowe informacje</p>
+        <button class="btn btn--arrow js-open-faq"><i class="arrow down"></i></button>
+      </div>
+      <div class="dropdown__btm">
+        <p class="paragraph paragraph--size-m">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur facilisis vulputate nunc. Morbi in scelerisque quam.
+        </p>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <div class="dropdown__top">
+        <p class="paragraph paragraph--bold paragraph--size-xl paragraph--title">Dodatkowe informacje</p>
+        <button class="btn btn--arrow js-open-faq"><i class="arrow down"></i></button>
+      </div>
+      <div class="dropdown__btm">
+        <p class="paragraph paragraph--size-m">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur facilisis vulputate nunc. Morbi in scelerisque quam.
+        </p>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <div class="dropdown__top dropdown__top--add">
+        <p class="paragraph paragraph--bold paragraph--size-xl paragraph--title">Dodatkowe informacje</p>
+        <button class="btn btn--arrow js-open-faq"><i class="arrow down"></i></button>
       </div>
       <div class="dropdown__btm">
         <p class="paragraph paragraph--size-m">
