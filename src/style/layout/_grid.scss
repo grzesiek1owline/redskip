@@ -25,7 +25,7 @@
   &-40 {
     display: block;
     left: 60%;
-    margin-top: calc(305px);
+    margin-top: 305px;
     height: auto;
     position: absolute;
     width: 40%;
@@ -46,6 +46,7 @@
   &-60 {
     position: absolute;
     width: 48%;
+    max-width: 800px;
 
     @include rwd(990px) {
       position: static;
