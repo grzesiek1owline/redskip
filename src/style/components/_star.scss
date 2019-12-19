@@ -1,0 +1,16 @@
+.stars {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__star {
+    background-image: url('/static/star.png');
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    width: 19px;
+    height: 18px;
+    margin-right: 6px;
+  }
+}

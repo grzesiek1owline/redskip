@@ -1,1 +1,26 @@
 // Header Styles
+.site-header {
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  left: 0;
+  top: 0;
+  z-index: 500;
+
+  &--home {
+    background-color: #fff;
+  }
+
+  &__form {
+    width: 540px;
+
+    @include rwd(1366px) {
+      width: 440px;
+    }
+
+    @include rwd(992px) {
+      width: 340px;
+    }
+  }
+}

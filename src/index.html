@@ -5,12 +5,17 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel=“stylesheet” type=“text/css” href=“../dist/style.css” />
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
   <title>Static HTML Site Boilerplate</title>
 </head>
+<body>
 
-<header class="header__home-site">
+<header class="site-header site-header--home">
   <div class="container">
-    <div class="banner__home-site">
       <nav class="nav">
         <a href="#" class="brand nav__brand">red<span class="brand--color brand--bold">skip</span>.pl</a>
 
@@ -30,11 +35,10 @@
           <button class="btn">Wyceń usługę</button>
         </div>
       </nav>
-    </div>
   </div>
 </header>
 
-<section class="hero">
+<section class="hero hero--home">
   <div class="container hero__container">
     <h1 class="h1"><span class="cs">Nr 1 w Polsce</span> pod wzgędem wywozu gruzu i innych odpadów w kontenerach </h1>
     <p class="paragraph paragraph--size-l hero__subtitle">Wyceń wywóz gruzu lub innych odpadów</p>
@@ -49,7 +53,7 @@
   </div>
 </section>
 
-<section class="section section--gradient-bg">
+<section class="section section--gradient-bg section--pb0">
   <div class="container">
     <div class="main-info main-info--bordered main-info--home main-info--with-square">
       <div class="main-info__wrapper main-info__wrapper--with-photo">
@@ -99,7 +103,7 @@
   </div>
 </section>
 
-<section class="section section--dark-bg">
+<section class="section section--dark-bg section--py0">
   <div class="container">
     <div class="row row--advantage">
       <div class="column">
@@ -184,6 +188,52 @@
 <!-- column,row,section-xxx, half-content i half-bg wrzućmy do pliku grid.scss , bo to w sumie elementy pozycjonujące są -->
 <!-- dla checlist jest plik _lists.scss w layout, tam będa wszystkie listy, advantage też w layout jest  -->
 
+<section class="section section--grey">
+  <div class="container">
+    <div class="row row--align-center">
+      <div class="column column-50">
+        <div class="adds-info">
+          <p class="paragraph paragraph--bold paragraph--size-xl paragraph--title">Dodatkowe informacje</p>
+          <p class="paragraph paragraph--size-m">
+            Na stronie <a href="" class="url"> wymiary kontenerów</a> znajdziesz orientacyjne wymiary
+            kontenerów z opisem sytuacji, w których taki kontener się sprawdzi
+            i do jakich odpadów jest przeznaczony. Jeśli szukasz wiadomości na
+            temat rodzajów odpadów, jakie można wrzucić do kontenera to
+            znajdziesz je na podstronie <a href="" class="url">porady i informacje</a>. Na tej samej stronie
+            umieszczone są też informacje na temat – pozwolenia na zajęcie
+            pasa ruchu – tam dowiesz czy potrzebujesz takiego pozwolenia
+            przy zamawianiu kontenera.
+          </p>
+          <p class="paragraph paragraph--size-m paragraph--bold">
+            Oprócz podanych wyżej informacji na stronie z poradami znajdziesz odpowiedzi na pytania:
+          </p>
+          <p class="paragraph paragraph--size-m">
+
+          </p>
+        </div>
+      </div>
+      <div class="column column-50">
+        <div class="slider js-slider slider--reference">
+          <div class="slider__item reference">
+            <p class="reference__desc paragraph paragraph--size-title paragraph--bold main-info__title">„Podstawili kontener na czas, na plus też miła obsługa!”</p>
+            <p class="referencje__author paragraph paragraph--size-m">Maciej W ocenił Reskip na 5</p>
+            <div class="stars">
+              <span class="stars__star"></span>
+              <span class="stars__star"></span>
+              <span class="stars__star"></span>
+              <span class="stars__star"></span>
+              <span class="stars__star"></span>
+            </div>
+            <div class="slider__navigation">
+              <button class="slider__arrow slider__arrow--prev js-prev-slide"></button>
+              <button class="slider__arrow js-next-slide"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="towns">
   <div class="container">
@@ -245,7 +295,5 @@
     </div>
   </div>
 </footer>
-
-<body>
-
 </body>
+</html>

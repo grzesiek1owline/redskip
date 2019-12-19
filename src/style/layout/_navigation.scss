@@ -6,6 +6,10 @@
   padding-top: 45px;
   padding-bottom: 20px;
 
+  &--page {
+    color: #fff;
+  }
+
   &__menu-wrap {
     display: flex;
     flex-direction: row;
@@ -15,6 +19,10 @@
 
   &__menu-list {
     margin-right: 95px;
+
+    @include rwd(992px) {
+      margin-right: 45px;
+    }
   }
 }
 

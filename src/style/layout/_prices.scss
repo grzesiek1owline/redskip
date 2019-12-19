@@ -1,0 +1,84 @@
+.prices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px , 1fr));
+  align-items: end;
+  gap: 20px;
+
+  @include rwd(992px) {
+    grid-template-columns: repeat(auto-fit, minmax(120px , 1fr));
+  }
+
+  @include rwd(768px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__column {
+    margin-bottom: 30px;
+
+    &--titles {
+      @include rwd(768px) {
+        display: none;
+      }
+    }
+  }
+
+  &__list {
+    text-align: center;
+
+    &--row-title {
+      text-align: left;
+    }
+  }
+
+  &__img {
+    margin: 0 auto 45px;
+    display: block;
+    width: auto;
+    max-width: 100%;
+  }
+
+  &__list-element {
+    height: 70px;
+
+    @include rwd(768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      &::before {
+        content: attr(data-name);
+        font-size: calc-rem(16px);
+        display: block;
+        font-weight: 700;
+        text-align: left;
+      }
+
+    }
+  }
+
+  &__check {
+    width: 41px;
+    height: 41px;
+    border-radius: 100%;
+    background-color: #04a90d;
+    position: relative;
+    display: block;
+    background-image: url('/static/check-ok.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 21px auto;
+    margin: 0 auto;
+  }
+
+  &__info {
+    width: 55%;
+    margin-top: 80px;
+
+    @include rwd (992px) {
+      width: 70%;
+    }
+
+    @include rwd (768px) {
+      width: 100%;
+    }
+  }
+}
