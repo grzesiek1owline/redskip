@@ -22,4 +22,13 @@
   &--pb0 {
     padding-bottom: 0;
   }
+
+  &--offert {
+    padding: 140px 0 105px;
+
+    @include rwd (992px) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+  }
 }
