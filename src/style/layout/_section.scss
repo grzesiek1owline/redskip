@@ -88,16 +88,24 @@
 .blog-banner {
   &__row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: auto;
     gap: 30px;
     align-items: stretch;
     margin-top: 79px;
     justify-items: center;
 
-    // @include rwd(620) {
-    //   align-items: center;
-    // }
+    @include rwd (1470px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include rwd (940px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include rwd (630px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__title {
@@ -124,5 +132,9 @@
 
   &__column {
     max-width: 270px;
+  }
+
+  &-a {
+    font-size: 0;
   }
 }
