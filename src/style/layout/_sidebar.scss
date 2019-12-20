@@ -3,6 +3,16 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   align-items: center;
+  justify-items: center;
+  gap: 30px;
+
+
+  &--slogan {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-items: center;
+  }
 
   &__item {
     display: flex;
@@ -10,11 +20,13 @@
     justify-content: flex-start;
     align-items: center;
     color: $firstColor;
+
   }
 
   &__ico {
     display: flex;
     height: auto;
+    max-height: 75px;
 
     &-wrapper {
       display: flex;

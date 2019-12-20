@@ -19,6 +19,12 @@
   @include rwd(992px) {
     width: 100%;
   }
+
+  &--slogan {
+    @media (max-width: 1250px) {
+      max-width: 920px;
+    }
+  }
 }
 
 .half-bg {
@@ -43,7 +49,7 @@
       margin: 40px auto 0;
     }
 
-    & > img {
+    &>img {
       width: auto;
       max-width: 100%;
       position: relative;
@@ -110,37 +116,38 @@
 
 
 .section {
-    &-title-xl {
-      margin-bottom: 61px;
+  &-title-xl {
+    margin-bottom: 61px;
 
-      &--small-mb {
-        margin-bottom: 17px;
-      }
+    &--small-mb {
+      margin-bottom: 17px;
     }
+  }
 
   @include rwd(1100px) {
     &-offert {
       margin-bottom: 100px;
-    &--align-center {
-      align-items: center;
-    }
-  }
 
-  &--advantage {
-    padding: 130px 0;
-
-    @include rwd(992px) {
-      flex-flow: column;
-      align-items: center;
-      justify-content: center;
+      &--align-center {
+        align-items: center;
+      }
     }
-  }
 
-  @include rwd(990px) {
-    &-offert {
-      margin-bottom: 0;
+    &--advantage {
+      padding: 130px 0;
+
+      @include rwd(992px) {
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+      }
     }
-  }
+
+    @include rwd(990px) {
+      &-offert {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 

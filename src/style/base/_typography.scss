@@ -44,6 +44,10 @@ h6 {
   font-size: calc-rem(24px);
 }
 
+.h5 {
+  font-size: calc-rem(21px);
+}
+
 p {
   margin-bottom: calc-rem(16px);
 }
@@ -129,6 +133,11 @@ b {
       font-size: calc-rem(36px);
       line-height: calc-rem(48px);
     }
+
+    &-xs {
+      font-size: calc-rem(12px);
+      line-height: calc-rem(21px);
+    }
   }
 
   &--lh {
@@ -161,7 +170,7 @@ b {
     margin-bottom: 30px;
   }
 
-  & + .paragraph.paragraph--size-xl {
+  &+.paragraph.paragraph--size-xl {
     margin-top: 45px;
   }
 
