@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel=“stylesheet” type=“text/css” href=“../dist/style.css” />
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <title>Static HTML Site Boilerplate</title>
+</head>
+<body>
+
+<header class="site-header js-site-header js-no-padding">
+  <div class="container">
+      <nav class="nav nav--page">
+        <a href="#" class="brand nav__brand">red<span class="brand--color brand--bold">skip</span>.pl</a>
+
+        <button class="hamburger nav__hamburger js-toggle-menu">
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+        </button>
+
+        <div class="nav__menu-wrap">
+          <ul class="menu nav__menu-list">
+            <li class="menu__item"><a href="" class="menu__url">Oferta</a></li>
+            <li class="menu__item"><a href="" class="menu__url">Wymiary kontenerów</a></li>
+            <li class="menu__item"><a href="" class="menu__url">Cennik</a></li>
+          </ul>
+          <button class="btn">Wyceń usługę</button>
+        </div>
+      </nav>
+  </div>
+</header>
+
+<section class="hero hero--page" style="background-image: url('/static/faq.png')">
+  <div class="container hero__container">
+    <h1 class="h1">Wymiary kontenerów</h1>
+    <p class="hero__subtitle paragraph paragraph--size-hero">
+      Podstawiamy kontenery na różne rodzaje odpadów.
+    </p>
+  </div>
+</section>
+
+
+<section class="section section--ovh">
+  <div class="half-bg-40 half-bg--right half-bg-40--decor2">
+    <img src="/static/chris.png" alt="">
+  </div>
+  <!-- pozycjonowanie absolutne, 40% szerokośc, wyrównane w pionie z contentem, modyfikator określa stronę -->
+  <div class="container">
+    <div class="half-content-60 half-content--left">
+    <div class="our-company-offert">
+      <p class="paragraph paragraph--bold h3">Oferujemy</p>
+      <p class="paragraph paragraph--size-m">
+        Standardowo podstawiamy kontener na okres <strong>5-7 dni roboczych</strong>. Oprócz tego oferujemy
+        również: <strong>załadunek na poczekaniu</strong> (masz 30 minut na załadowanie kontenera),
+        <strong>ekspres</strong>
+        (podstawienie tego samego dnia – tylko telefonicznie), <strong>wynajem długoterminowy</strong>
+        oraz <strong>podstawienie kontenera rano i odbiór tego samego dnia</strong> po południu.
+      </p>
+      <div class="spacer" style="display:block; width: 100%; height: 30px;"></div>
+      <p class="paragraph paragraph--bold h3">Oferujemy</p>
+      <p class="paragraph paragraph--size-m">
+        Standardowo podstawiamy kontener na okres <strong>5-7 dni roboczych</strong>. Oprócz tego oferujemy
+        również: <strong>załadunek na poczekaniu</strong> (masz 30 minut na załadowanie kontenera),
+        <strong>ekspres</strong>
+        (podstawienie tego samego dnia – tylko telefonicznie), <strong>wynajem długoterminowy</strong>
+        oraz <strong>podstawienie kontenera rano i odbiór tego samego dnia</strong> po południu.
+      </p>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark-bg section--paragraph section--color-light">
+  <div class="container">
+    <p class="paragraph paragraph--size-title paragraph--bold">
+      Bez zamieszania. Bez problemów. Bez dodatkowych kosztów administracyjnych.
+    </p>
+    <p class="paragraph paragraph--size-m">
+      Dla nas nie ma znaczenia czy podstawiamy mały czy duży kontener, czy jest to usługa pojedyńcza, czy wielokrotne zlecenie.
+      Przykładamy się do każdego zamówienia. W Redskip dbamy o indywidualne podejście do naszych klientów, tak aby kontenery były podstawione wtedy kiedy są potrzebne, a kiedy już nie są, aby ich już nie było.
+      <br><br>
+      Dzięki dobrym relacjom ze sprawdzonymi podwykonawcami mamy pewność, że pracę związane z wywozem odpadów będą zrobione wtedy, kiedy muszą być zrobione.
+      Warto pamiętać, o tym, że możemy podstawić wiele kontenerów w wielu lokalizacjach jednocześnie.
+      <br><br>
+      Co możemy zaoferować:
+    </p>
+    <div class="spacer" style="display:block; width: 100%; height: 30px;"></div>
+    <div class="row row--offert">
+      <!--dodałem modyfikator offert, bo nim wysterujemy marginesy po prostu, tu chyba będzie dobry grid i odstęp poprzez gap  -->
+      <div class="row__column">
+        <ul class="check-list">
+          <li class="check-list__item check-list__item--white">wywóz gruzu</li>
+          <li class="check-list__item check-list__item--white">wywóz śmieci po remoncie</li>
+        </ul>
+      </div>
+      <div class="row__column">
+        <ul class="check-list">
+          <li class="check-list__item check-list__item--white">wywóz ziemi</li>
+          <li class="check-list__item check-list__item--white">wywóz materiałów izolacyjnych</li>
+          <li class="check-list__item check-list__item--white">wywóz papy</li>
+        </ul>
+      </div>
+      <div class="row__column">
+        <ul class="check-list">
+          <li class="check-list__item check-list__item--white">wywóz ziemi</li>
+          <li class="check-list__item check-list__item--white">wywóz materiałów izolacyjnych</li>
+          <li class="check-list__item check-list__item--white">wywóz papy</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section section--ovh section--bb">
+  <div class="half-bg-40 half-bg--left half-bg-40--decor3">
+    <img src="/static/chris.png" alt="">
+  </div>
+  <!-- pozycjonowanie absolutne, 40% szerokośc, wyrównane w pionie z contentem, modyfikator określa stronę -->
+  <div class="container">
+    <div class="half-content-60 half-content--right">
+    <div class="our-company-offert">
+      <p class="paragraph paragraph--bold h3">Oferujemy</p>
+      <p class="paragraph paragraph--size-m">
+        Standardowo podstawiamy kontener na okres <strong>5-7 dni roboczych</strong>. Oprócz tego oferujemy
+        również: <strong>załadunek na poczekaniu</strong> (masz 30 minut na załadowanie kontenera),
+        <strong>ekspres</strong>
+        (podstawienie tego samego dnia – tylko telefonicznie), <strong>wynajem długoterminowy</strong>
+        oraz <strong>podstawienie kontenera rano i odbiór tego samego dnia</strong> po południu.
+        <br/><br/>
+        Standardowo podstawiamy kontener na okres <strong>5-7 dni roboczych</strong>. Oprócz tego oferujemy
+        również: <strong>załadunek na poczekaniu</strong> (masz 30 minut na załadowanie kontenera),
+        <strong>ekspres</strong>
+        (podstawienie tego samego dnia – tylko telefonicznie), <strong>wynajem długoterminowy</strong>
+        oraz <strong>podstawienie kontenera rano i odbiór tego samego dnia</strong> po południu.
+      </p>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="towns">
+  <div class="container">
+    <h3 class="h3 footer__title">Jakie miasta obsługujemy</h3>
+    <div class="towns__row">
+      <div class="towns__column">
+        <a href="locations.html" class="towns__url">Wywóz gruzu i śmieci Gdańsk</a>
+        <a href="locations.html" class="towns__url">Wywóz gruzu i śmieci Gdynia</a>
+      </div>
+      <div class="towns__column">
+        <a href="locations.html" class="towns__url">Wywóz gruzu i śmieci Sopot</a>
+        <a href="locations.html" class="towns__url">Wywóz śmieci Warszawa</a>
+      </div>
+      <div class="towns__column">
+        <a href="locations.html" class="towns__url">Wywóz śmieci Kraków</a>
+        <a href="locations.html" class="towns__url">Wywóz śmieci Łódź</a>
+      </div>
+      <div class="towns__column">
+        <a href="locations.html" class="towns__url">Wywóz gruzu Toruń</a>
+        <a href="locations.html" class="towns__url">Wywóz gruzu Bydgoszcz</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+
+      <a href="#" class="brand brand--small footer__brand">red<span class="brand--color brand--bold">skip</span>.pl</a>
+
+      <nav class="footer__nav">
+        <ul class="menu menu--column footer__menu">
+          <li class="menu__item menu__item--footer">
+            <p class="menu__head">tekst-1</p>
+          </li>
+          <li class="menu__item menu__item--footer"><a href="" class="menu__url">tekst-2</a></li>
+          <li class="menu__item menu__item--footer"><a href="" class="menu__url">tekst-3</a></li>
+          <li class="menu__item menu__item--footer"><a href="" class="menu__url">tekst-2</a></li>
+          <li class="menu__item menu__item--footer"><a href="" class="menu__url">tekst-3</a></li>
+          <li class="menu__item menu__item--footer"><a href="" class="menu__url">tekst-2</a></li>
+          <li class="menu__item menu__item--footer"><a href="" class="menu__url">tekst-3</a></li>
+        </ul>
+
+        <ul class="menu menu--column footer__menu footer__menu--second-column">
+          <li class="menu__item menu__item--footer">
+            <p class="menu__head">tekst-1</p>
+          </li>
+          <li class="menu__item menu__item--footer"><a href="" class="menu__url">tekst-2</a></li>
+          <li class="menu__item menu__item--footer"><a href="" class="menu__url">tekst-3</a></li>
+        </ul>
+      </nav>
+
+      <div class="payments footer__payments">
+        <img src="/static/payment.jpg" alt="metody płatności" class="payments__img">
+        <p class="paragraph paragraph--size-s paragraph--bold payments__desc">Obsługujemy płatności online</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<div class="popup">
+  <div class="popup__overlay"></div>
+  <div class="popup__content">
+
+  </div>
+</div>
+
+</body>
+</html>

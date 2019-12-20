@@ -21,7 +21,7 @@ function fixedMenuPadding() {
   }
   let pto = pt.getBoundingClientRect();
   if(! pt.classList.contains('js-no-padding')){
-    document.body.style.paddingTop = pt.height + 'px';
+    document.body.style.paddingTop = pto.height + 'px';
   }
 }
 

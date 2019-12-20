@@ -89,6 +89,65 @@
       right: 100px;
     }
   }
+
+  &-40--decor2 {
+    z-index: 10;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      z-index: 11;
+
+    }
+
+    &::before {
+      background-color: $secondColor;
+      width: 182px;
+      height: 223px;
+      left: -50px;
+      top: -50px;
+    }
+
+    &::after {
+      background-color: #ffae00;
+      width: 3100px;
+      height: 380px;
+      bottom: -120px;
+      left: 180px;
+    }
+  }
+
+  &-40--decor3 {
+    z-index: 10;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      z-index: 11;
+
+    }
+
+    &::before {
+      // background-color: $secondColor;
+      background-color: #ffae00;
+      width: 182px;
+      height: 223px;
+      left: -50px;
+      top: -50px;
+    }
+
+    &::after {
+      background-color: #f3f4f8;
+      width: 310px;
+      height: 380px;
+      bottom: -120px;
+      right: 100px;
+    }
+  }
 }
 
 .half-content {
