@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: 120px 1fr;
   align-items: center;
+  position: relative;
   // padding-bottom: 20px;
 
   // &--page {
@@ -14,6 +15,27 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+
+    @include rwd(768px) {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      color: #fff;
+      background-color: rgba($secondColor, 0.85);
+      z-index: 99;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(-100vw);
+      transition: transform 200ms ease;
+    }
+
+    &.active {
+      transform: translateX(0);
+    }
+
   }
 
   &__menu-list {
@@ -21,6 +43,10 @@
 
     @include rwd(992px) {
       margin-right: 45px;
+    }
+
+    @include rwd(768px) {
+      margin-right: 0;
     }
   }
 

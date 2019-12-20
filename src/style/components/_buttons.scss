@@ -16,6 +16,13 @@
   background: none;
   display: none;
 
+  @include rwd(768px) {
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+  }
+
   & > span {
     display: block;
     position: absolute;

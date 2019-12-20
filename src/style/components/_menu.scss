@@ -11,9 +11,21 @@
     align-items: flex-start;
   }
 
+  @include rwd(768px) {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__item {
     margin-left: 35px;
     font-size: calc-rem(14px);
+
+    @include rwd(768px) {
+      margin-left: 0;
+      margin-bottom: 20px;
+      font-size: calc-rem(20px);
+    }
 
     &--footer {
       margin-bottom: 15px;

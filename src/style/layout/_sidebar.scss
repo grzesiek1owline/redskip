@@ -9,15 +9,15 @@
 
   &--slogan {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,  minmax(270px, 1fr));
     align-items: center;
     justify-items: center;
 
-    @include rwd(1460px) {
+    @include rwd(992px) {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @include rwd(800px) {
+    @include rwd(768px) {
       grid-template-columns: repeat(1, 1fr);
     }
 
@@ -42,6 +42,7 @@
       display: flex;
       justify-content: center;
       width: 75px;
+      min-width: 75px;
       height: 75px;
       background-color: $firstBgColor;
       border-radius: 50%;
@@ -50,8 +51,7 @@
   }
 
   &__wrap {
-    margin-left: 45px;
-    width: 270px;
+    margin-left: 15px;
   }
 
   &__title {

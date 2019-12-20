@@ -6,7 +6,7 @@
   margin: 0 auto;
 
   @include rwd(1600px) {
-    width: calc(100vw - 280px);
+    width: calc(100vw - 120px);
   }
 
   @include rwd(1200px) {
@@ -20,11 +20,11 @@
     width: 100%;
   }
 
-  &--slogan {
-    @media (max-width: 1250px) {
-      max-width: 920px;
-    }
-  }
+  // &--slogan {
+  //   @media (max-width: 1250px) {
+  //     max-width: 920px;
+  //   }
+  // }
 
 }
 
