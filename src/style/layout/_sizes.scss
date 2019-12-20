@@ -1,0 +1,54 @@
+.sizes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: stretch;
+  gap: 30px;
+  margin-top: 35px;
+
+  @include rwd(992px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include rwd(768px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__item {
+    width: 100%;
+    padding: 55px 50px 47px;
+    border: 1px solid #e2e2ed;
+    background-color: #fff;
+    border-radius: 5px;
+
+    &--dark,
+    &:nth-child(2n) {
+      background-color: #f5f5f9;
+    }
+  }
+
+  &__ico {
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__desc {
+    margin-bottom: 80px;
+  }
+
+  // &__details {}
+
+  &__details-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    & > p:first-of-type {
+      width: 100px;
+      margin-right: 20px;
+    }
+  }
+}

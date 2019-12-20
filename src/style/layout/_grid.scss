@@ -6,18 +6,157 @@
   margin: 0 auto;
 
   @include rwd(1600px) {
-    width: calc(100vw - 340px);
+    width: calc(100vw - 280px);
   }
 
   @include rwd(1200px) {
-    width: calc(100vw - 240px);
+    width: 100%;
+    max-width: 100%;
+    padding: 0 30px;
   }
 
-  @include rwd(1024px) {
-    width: calc(100vw - 140px);
-  }
 
   @include rwd(992px) {
     width: 100%;
   }
 }
+
+.half-bg {
+  &-40 {
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    height: auto;
+    position: absolute;
+    width: 40%;
+
+    @include rwd(1200px) {
+      right: 0;
+      width: 40%;
+    }
+
+    @include rwd(990px) {
+      position: static;
+      top: 0;
+      transform: unset;
+      width: 80%;
+      margin: 40px auto 0;
+    }
+
+    & > img {
+      width: auto;
+      max-width: 100%;
+      position: relative;
+      z-index: 12;
+    }
+  }
+
+  &--right {
+    left: unset;
+    right: 0;
+  }
+
+  &--left {
+    right: unset;
+    left: 0;
+  }
+
+  &-40--decor {
+    z-index: 10;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      z-index: 11;
+
+    }
+
+    &::before {
+      background-color: $secondColor;
+      width: 182px;
+      height: 223px;
+      left: -50px;
+      top: -50px;
+    }
+
+    &::after {
+      background-color: #f3f4f8;
+      width: 310px;
+      height: 380px;
+      bottom: -120px;
+      right: 100px;
+    }
+  }
+}
+
+.half-content {
+  &-60 {
+    width: 60%;
+
+    @include rwd(990px) {
+      position: static;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+
+  &--right {
+    margin-left: 40%;
+    padding-left: 30px;
+  }
+}
+
+
+.section {
+    &-title-xl {
+      margin-bottom: 61px;
+
+      &--small-mb {
+        margin-bottom: 17px;
+      }
+    }
+
+  @include rwd(1100px) {
+    &-offert {
+      margin-bottom: 100px;
+    &--align-center {
+      align-items: center;
+    }
+  }
+
+  &--advantage {
+    padding: 130px 0;
+
+    @include rwd(992px) {
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @include rwd(990px) {
+    &-offert {
+      margin-bottom: 0;
+    }
+  }
+  }
+}
+
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
+  grid-auto-rows: auto;
+  gap: 20px;
+  align-items: stretch;
+
+  &--offert {
+    padding-bottom: 74px;
+  }
+}
+
+// .column {
+//   width: 50%;
+// }

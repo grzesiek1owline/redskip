@@ -32,15 +32,42 @@ h6 {
   font-size: calc-rem(48px);
 }
 
+.h2 {
+  font-size: calc-rem(72px);
+}
+
+.h3 {
+  font-size: calc-rem(48px);
+}
+
+.h4 {
+  font-size: calc-rem(24px);
+}
+
 p {
   margin-bottom: calc-rem(16px);
 }
 
 // Text Styles
-.cs { color: $secondColor;}
-em { font-style: italic; }
-strong { font-weight: bold; }
-.uppercase { text-transform: uppercase; }
+.cs {
+  color: $secondColor;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.tdu {
+  text-decoration: underline;
+}
 
 a {
   color: inherit;
@@ -51,6 +78,17 @@ a {
     opacity: 0.8;
     text-decoration: none;
   }
+}
+
+.section-title-xl {
+  font-size: calc-rem(72px);
+  font-weight: 700;
+  line-height: calc-rem(78px);
+  margin-bottom: 55px;
+}
+
+b {
+  font-weight: 700;
 }
 
 .paragraph {
@@ -64,6 +102,21 @@ a {
 
     &-m {
       font-size: calc-rem(16px);
+      line-height: calc-rem(24px);
+    }
+
+    &-xm {
+      font-size: calc-rem(20px);
+      line-height: calc-rem(27px);
+    }
+
+    &-medium {
+      font-size: calc-rem(22px);
+      line-height: calc-rem(27px);
+    }
+
+    &-xl {
+      font-size: calc-rem(24px);
       line-height: calc-rem(24px);
     }
 
@@ -91,6 +144,10 @@ a {
       line-height: calc-rem(27px);
     }
 
+    &-xl {
+      line-height: calc-rem(36px);
+    }
+
     &-title {
       line-height: calc-rem(48px);
     }
@@ -100,33 +157,24 @@ a {
     font-weight: 700;
   }
 
-  &__f-size {
-      &-l {
-          font-size: calc-rem(18px);
-      }
-
-      &-s {
-          font-size: calc-rem(14px);
-      }
-
-      &-xl {
-          font-size: calc-rem(21px);
-          font-weight: 700;
-      }
+  &--title {
+    margin-bottom: 30px;
   }
 
-  &__l-height {
-      &-xl {
-          line-height: 48px;
-      }
-      &-l {
-          line-height: 27px;
-      }
-      &-xxl {
-          line-height: 36px;
-      }
+  & + .paragraph.paragraph--size-xl {
+    margin-top: 45px;
   }
-  &__title {
-      font-weight: 700;
+
+}
+
+.arrow {
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+
+  &.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
   }
 }

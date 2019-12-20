@@ -7,7 +7,8 @@
   &__row {
       color: $fourthColor;
       position: relative;
-      width: 350px;
+      width: 100%;
+      max-width: 350px;
       height: 50px;
       box-shadow: $box-shadow;
       border-radius: 5px;
@@ -15,6 +16,14 @@
       background-color: $firstBgColor;
       overflow: hidden;
       margin-right: 12px;
+
+      &--header {
+        border: none;
+      }
+
+      &--no-border {
+        border: none;
+      }
   }
 
   &__input {
@@ -34,6 +43,27 @@
         color: #8d91bc;
         font-size: calc-rem(14px);
       }
+  }
+
+  &__select {
+    border: none;
+    margin-top: 1px;
+    padding: 0 30px 0 30px;
+    width: 90%;
+    height: 100%;
+    font-size: calc-rem(14px);
+    color: #8d91bc;
+    outline:none;
+
+    &::placeholder {
+      color: #8d91bc;
+      font-size: calc-rem(14px);
+    }
+
+    & > option {
+      color: #8d91bc;
+      font-size: calc-rem(14px);
+    }
   }
 
   &__input-ico {
