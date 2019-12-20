@@ -9,11 +9,22 @@
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-    color: #262626;
+    color: $firstColor;
   }
 
   &__ico {
+    display: flex;
     height: auto;
+
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      width: 75px;
+      height: 75px;
+      background-color: $firstBgColor;
+      border-radius: 50%;
+    }
+
   }
 
   &__wrap {
@@ -25,6 +36,10 @@
     font-size: 21px;
     font-weight: 700;
     margin-bottom: 5px;
+
+    &-bright {
+      color: $thirdColor;
+    }
   }
 
   &__info {
@@ -33,5 +48,10 @@
     font-size: calc-rem(14px);
     line-height: calc-rem(18px);
     margin: 0;
+
+    &-bright {
+      color: $thirdColor;
+    }
   }
+
 }

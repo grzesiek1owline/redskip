@@ -13,6 +13,7 @@
 
   &--dark-bg {
     background-color: $secondColor;
+    color: $thirdColor;
   }
 
   &--grey {
@@ -53,8 +54,22 @@
       align-items: flex-start;
     }
   }
+
+  &__title {
+    text-align: center;
+  }
 }
 
 .rubble {
   height: 200px;
+}
+
+.slogan {
+  &--paragraph-margin {
+    margin: 28px 0 64px 0;
+  }
+
+  &--down-padding {
+    padding-bottom: 17px;
+  }
 }
