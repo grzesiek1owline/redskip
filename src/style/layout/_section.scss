@@ -44,6 +44,15 @@
     padding: 0 0 100px;
   }
 
+  &--ovh {
+    overflow: hidden;
+    min-height: 750px;
+  }
+
+  &--bb {
+    border-bottom: 1px solid #eaebf3;
+  }
+
   &--offert {
     padding: 140px 0 105px;
     overflow: hidden;

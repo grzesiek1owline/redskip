@@ -1,19 +1,41 @@
 // Header Styles
 .site-header {
   padding: 0;
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: auto;
   left: 0;
   top: 0;
   z-index: 500;
+  transition: transform 200ms ease;
+  padding-top: 45px;
+  padding-bottom: 20px;
 
   &--home {
     background-color: #fff;
+    color: $firstColor;
+  }
+
+  &--page {
+    color: #fff;
   }
 
   &--transparent {
     background-color: transparent;
+  }
+
+  &.hide {
+    transform: translateY(-100px);
+    background-color: #fff;
+    color: $firstColor;
+    transition: all 200ms ease;
+
+    &.sticky {
+      transform: translateY(0);
+      position: fixed;
+      padding: 15px 0 20px;
+      box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    }
   }
 
   &__form {

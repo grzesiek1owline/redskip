@@ -3,12 +3,11 @@
   display: grid;
   grid-template-columns: 120px 1fr;
   align-items: center;
-  padding-top: 45px;
-  padding-bottom: 20px;
+  // padding-bottom: 20px;
 
-  &--page {
-    color: #fff;
-  }
+  // &--page {
+  //   color: #fff;
+  // }
 
   &__menu-wrap {
     display: flex;
