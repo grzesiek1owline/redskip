@@ -2,6 +2,7 @@ if (module.hot) {
   module.hot.accept();
 }
 
+
 jQuery('.js-open-faq').click(function(){
   if (jQuery(this).parent(".dropdown__top").hasClass("open")) {
     jQuery(this).parent(".dropdown__top").removeClass("open");
@@ -11,6 +12,32 @@ jQuery('.js-open-faq').click(function(){
     jQuery(this).parent('.dropdown__top').siblings(".dropdown__btm").slideDown(500);
   }
 })
+
+
+let scrollMonitor = require('scrollmonitor');
+
+function addStickyHeader(element) {
+  element.classList.add('hide');
+  setTimeout(function(){ element.classList.add('sticky'); }, 200);
+}
+
+
+function stickyHeader() {
+
+  let header = document.querySelector('.js-site-header');
+
+  if(! header) {
+    return;
+  }
+
+  const secondWatcher = scrollMonitor.create(header, 300);
+  secondWatcher.lock();
+  secondWatcher.enterViewport(() => header.classList.remove('sticky','hide'));
+  secondWatcher.exitViewport(() => addStickyHeader(header));
+
+}
+
+stickyHeader();
 
 // sticky header
 
