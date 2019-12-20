@@ -20,6 +20,10 @@
       &--header {
         border: none;
       }
+
+      &--no-border {
+        border: none;
+      }
   }
 
   &__input {
@@ -39,6 +43,27 @@
         color: #8d91bc;
         font-size: calc-rem(14px);
       }
+  }
+
+  &__select {
+    border: none;
+    margin-top: 1px;
+    padding: 0 30px 0 30px;
+    width: 90%;
+    height: 100%;
+    font-size: calc-rem(14px);
+    color: #8d91bc;
+    outline:none;
+
+    &::placeholder {
+      color: #8d91bc;
+      font-size: calc-rem(14px);
+    }
+
+    & > option {
+      color: #8d91bc;
+      font-size: calc-rem(14px);
+    }
   }
 
   &__input-ico {

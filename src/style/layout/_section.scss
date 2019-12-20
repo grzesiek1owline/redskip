@@ -23,8 +23,29 @@
     padding-bottom: 0;
   }
 
+  &--color-light {
+    color: #fff;
+  }
+
+  &--resp {
+    padding: 130px 0 215px;
+  }
+
+  &--locations {
+    padding-top: 60px;
+  }
+
+  &--paragraph {
+    padding: 64px 0 50px;
+  }
+
+  &--add-prices {
+    padding: 0 0 100px;
+  }
+
   &--offert {
     padding: 140px 0 105px;
+    overflow: hidden;
 
     @include rwd (992px) {
       display: flex;
@@ -33,4 +54,4 @@
     }
   }
 }
-}
+

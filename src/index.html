@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<header class="site-header site-header--home">
+<header class="site-header site-header--home js-site-header">
   <div class="container">
       <nav class="nav">
         <a href="#" class="brand nav__brand">red<span class="brand--color brand--bold">skip</span>.pl</a>
@@ -144,7 +144,9 @@
 </section>
 
 <section class="section section--offert">
-  <img class="half-bg-40 half-bg--right" src="/static/kontener-mulda.jpg" alt="">
+  <div class="half-bg-40 half-bg--right">
+    <img src="/static/kontener-mulda.jpg" alt="">
+  </div>
   <!-- pozycjonowanie absolutne, 40% szerokośc, wyrównane w pionie z contentem, modyfikator określa stronę -->
   <div class="container">
     <div class="half-content-60 half-content--left">
@@ -154,7 +156,7 @@
         <!--dodałem modyfikator offert, bo nim wysterujemy marginesy po prostu, tu chyba będzie dobry grid i odstęp poprzez gap  -->
         <div class="row__column">
           <ul class="check-list">
-            <li class="check-list__item check-list__item::before">wywóz gruzu</li>
+            <li class="check-list__item">wywóz gruzu</li>
             <li class="check-list__item">wywóz śmieci po remoncie</li>
             <li class="check-list__item">wywóz odpadów budowlanych</li>
             <li class="check-list__item">wywóz mebli i gabarytów</li>

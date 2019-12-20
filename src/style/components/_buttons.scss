@@ -100,4 +100,10 @@
     width: 70px;
     height: 70px;
   }
+
+  &--second {
+    background-color: #ffae00;
+    box-shadow: 0 6px 12px rgba(229, 160, 12, 0.5);
+    color: #fff;
+  }
 }
