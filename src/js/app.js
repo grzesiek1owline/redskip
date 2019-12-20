@@ -2,6 +2,9 @@ if (module.hot) {
   module.hot.accept();
 }
 
+// import scrollMonitor from 'scrollmonitor';
+
+
 jQuery('.js-open-faq').click(function(){
   if (jQuery(this).parent(".dropdown__top").hasClass("open")) {
     jQuery(this).parent(".dropdown__top").removeClass("open");
