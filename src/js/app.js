@@ -2,7 +2,6 @@ if (module.hot) {
   module.hot.accept();
 }
 
-
 jQuery('.js-open-faq').click(function(){
   if (jQuery(this).parent(".dropdown__top").hasClass("open")) {
     jQuery(this).parent(".dropdown__top").removeClass("open");

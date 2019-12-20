@@ -23,6 +23,17 @@
       margin-right: 45px;
     }
   }
+
+  &--white-shadow {
+    position: fixed;
+    top: 25px;
+    width: 100%;
+    height: 90px;
+    background-color: $firstBgColor;
+    border: 2px solid $secondColor;
+    z-index: -1;
+  }
+
 }
 
 .nav-code {

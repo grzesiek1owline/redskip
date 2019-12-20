@@ -3,21 +3,55 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   align-items: center;
+  justify-items: center;
+  gap: 30px;
+
+
+  &--slogan {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+
+    @include rwd(1460px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include rwd(800px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+
+  }
 
   &__item {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-    color: #262626;
+    color: $firstColor;
+
   }
 
   &__ico {
+    display: flex;
     height: auto;
+    max-height: 75px;
+
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      width: 75px;
+      height: 75px;
+      background-color: $firstBgColor;
+      border-radius: 50%;
+    }
+
   }
 
   &__wrap {
     margin-left: 45px;
+    width: 270px;
   }
 
   &__title {
@@ -25,6 +59,10 @@
     font-size: 21px;
     font-weight: 700;
     margin-bottom: 5px;
+
+    &-bright {
+      color: $thirdColor;
+    }
   }
 
   &__info {
@@ -33,5 +71,10 @@
     font-size: calc-rem(14px);
     line-height: calc-rem(18px);
     margin: 0;
+
+    &-bright {
+      color: $thirdColor;
+    }
   }
+
 }
